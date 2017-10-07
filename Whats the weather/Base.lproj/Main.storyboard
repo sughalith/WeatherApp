@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's the weather?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVc-hG-ecD">
-                                <rect key="frame" x="55.5" y="53" width="264.5" height="36"/>
+                                <rect key="frame" x="55" y="53" width="265" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="0ST-it-uWG"/>
                                     <constraint firstAttribute="width" constant="264.5" id="VYh-Me-DNq"/>
@@ -31,7 +31,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your city" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbH-07-nbD">
-                                <rect key="frame" x="132.5" y="106" width="110.5" height="21"/>
+                                <rect key="frame" x="132" y="106" width="111" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -51,11 +51,10 @@
                                     <action selector="getWeather:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PdH-hn-ktt"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5O-W4-YUz">
-                                <rect key="frame" x="16" y="227" width="343" height="80"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K13-ge-74y">
+                                <rect key="frame" x="8" y="227" width="359" height="120"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="Vzw-ah-bvP"/>
-                                    <constraint firstAttribute="width" constant="343" id="uxD-Tu-b7A"/>
+                                    <constraint firstAttribute="height" constant="120" id="pYV-Eu-aN3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
@@ -69,22 +68,23 @@
                             <constraint firstItem="TwI-i3-kas" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="95A-Sc-AIK"/>
                             <constraint firstItem="tbH-07-nbD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Eqs-Zu-Xzz"/>
                             <constraint firstItem="xVc-hG-ecD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gd4-fK-exh"/>
+                            <constraint firstItem="K13-ge-74y" firstAttribute="top" secondItem="TwI-i3-kas" secondAttribute="bottom" constant="8" id="HgU-ds-Rak"/>
                             <constraint firstItem="xVc-hG-ecD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="Hnr-A0-evg"/>
                             <constraint firstItem="cAi-ih-EGX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VPL-Ih-SZK"/>
                             <constraint firstItem="TwI-i3-kas" firstAttribute="top" secondItem="bOA-FF-QNq" secondAttribute="bottom" constant="8" id="Vll-rp-UpY"/>
-                            <constraint firstItem="a5O-W4-YUz" firstAttribute="top" secondItem="TwI-i3-kas" secondAttribute="bottom" constant="8" id="XGA-dX-zDv"/>
                             <constraint firstItem="bOA-FF-QNq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bWV-at-tC6"/>
                             <constraint firstItem="bOA-FF-QNq" firstAttribute="top" secondItem="tbH-07-nbD" secondAttribute="bottom" constant="24" id="ddx-MP-EKr"/>
                             <constraint firstItem="cAi-ih-EGX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="evz-tl-HR0"/>
                             <constraint firstItem="tbH-07-nbD" firstAttribute="top" secondItem="xVc-hG-ecD" secondAttribute="bottom" constant="17" id="o4n-em-TyM"/>
-                            <constraint firstItem="a5O-W4-YUz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oxD-Ad-WdM"/>
                             <constraint firstItem="cAi-ih-EGX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="paC-cj-JVN"/>
+                            <constraint firstItem="K13-ge-74y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="w6J-qD-4uq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K13-ge-74y" secondAttribute="trailing" constant="8" id="zP9-gl-rfH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="cityTextField" destination="bOA-FF-QNq" id="Dti-z6-7fI"/>
-                        <outlet property="resultLabel" destination="a5O-W4-YUz" id="6lF-cC-un3"/>
+                        <outlet property="resultLabel" destination="K13-ge-74y" id="CDg-VT-j7X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
