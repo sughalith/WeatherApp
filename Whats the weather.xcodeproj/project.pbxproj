@@ -12,6 +12,7 @@
 		DDA058891F88FEBC00E961B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA058871F88FEBC00E961B1 /* Main.storyboard */; };
 		DDA0588B1F88FEBC00E961B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDA0588A1F88FEBC00E961B1 /* Assets.xcassets */; };
 		DDA0588E1F88FEBC00E961B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA0588C1F88FEBC00E961B1 /* LaunchScreen.storyboard */; };
+		DDA058981F890A2500E961B1 /* eberhard-grossgasteiger-330357.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DDA058971F890A2500E961B1 /* eberhard-grossgasteiger-330357.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		DDA0588A1F88FEBC00E961B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDA0588D1F88FEBC00E961B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDA0588F1F88FEBC00E961B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDA058961F89088900E961B1 /* eberhard-grossgasteiger-330357.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "eberhard-grossgasteiger-330357.jpg"; sourceTree = "<group>"; };
+		DDA058971F890A2500E961B1 /* eberhard-grossgasteiger-330357.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "eberhard-grossgasteiger-330357.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +41,7 @@
 		DDA058771F88FEBC00E961B1 = {
 			isa = PBXGroup;
 			children = (
+				DDA058971F890A2500E961B1 /* eberhard-grossgasteiger-330357.jpg */,
 				DDA058821F88FEBC00E961B1 /* Whats the weather */,
 				DDA058811F88FEBC00E961B1 /* Products */,
 			);
@@ -58,6 +62,7 @@
 				DDA058851F88FEBC00E961B1 /* ViewController.swift */,
 				DDA058871F88FEBC00E961B1 /* Main.storyboard */,
 				DDA0588A1F88FEBC00E961B1 /* Assets.xcassets */,
+				DDA058961F89088900E961B1 /* eberhard-grossgasteiger-330357.jpg */,
 				DDA0588C1F88FEBC00E961B1 /* LaunchScreen.storyboard */,
 				DDA0588F1F88FEBC00E961B1 /* Info.plist */,
 			);
@@ -123,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDA058981F890A2500E961B1 /* eberhard-grossgasteiger-330357.jpg in Resources */,
 				DDA0588E1F88FEBC00E961B1 /* LaunchScreen.storyboard in Resources */,
 				DDA0588B1F88FEBC00E961B1 /* Assets.xcassets in Resources */,
 				DDA058891F88FEBC00E961B1 /* Main.storyboard in Resources */,

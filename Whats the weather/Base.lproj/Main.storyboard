@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,87 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Whats_the_weather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eberhard-grossgasteiger-330357.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cAi-ih-EGX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's the weather?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVc-hG-ecD">
+                                <rect key="frame" x="55.5" y="53" width="264.5" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="0ST-it-uWG"/>
+                                    <constraint firstAttribute="width" constant="264.5" id="VYh-Me-DNq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your city" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbH-07-nbD">
+                                <rect key="frame" x="132.5" y="106" width="110.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eg. London, San Francisco" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bOA-FF-QNq">
+                                <rect key="frame" x="16" y="151" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TwI-i3-kas">
+                                <rect key="frame" x="163" y="189" width="49" height="30"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="getWeather:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PdH-hn-ktt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5O-W4-YUz">
+                                <rect key="frame" x="16" y="227" width="343" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Vzw-ah-bvP"/>
+                                    <constraint firstAttribute="width" constant="343" id="uxD-Tu-b7A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cAi-ih-EGX" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="1eD-WP-m5K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bOA-FF-QNq" secondAttribute="trailing" constant="16" id="4sW-e3-W9X"/>
+                            <constraint firstItem="TwI-i3-kas" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="95A-Sc-AIK"/>
+                            <constraint firstItem="tbH-07-nbD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Eqs-Zu-Xzz"/>
+                            <constraint firstItem="xVc-hG-ecD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gd4-fK-exh"/>
+                            <constraint firstItem="xVc-hG-ecD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="Hnr-A0-evg"/>
+                            <constraint firstItem="cAi-ih-EGX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VPL-Ih-SZK"/>
+                            <constraint firstItem="TwI-i3-kas" firstAttribute="top" secondItem="bOA-FF-QNq" secondAttribute="bottom" constant="8" id="Vll-rp-UpY"/>
+                            <constraint firstItem="a5O-W4-YUz" firstAttribute="top" secondItem="TwI-i3-kas" secondAttribute="bottom" constant="8" id="XGA-dX-zDv"/>
+                            <constraint firstItem="bOA-FF-QNq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bWV-at-tC6"/>
+                            <constraint firstItem="bOA-FF-QNq" firstAttribute="top" secondItem="tbH-07-nbD" secondAttribute="bottom" constant="24" id="ddx-MP-EKr"/>
+                            <constraint firstItem="cAi-ih-EGX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="evz-tl-HR0"/>
+                            <constraint firstItem="tbH-07-nbD" firstAttribute="top" secondItem="xVc-hG-ecD" secondAttribute="bottom" constant="17" id="o4n-em-TyM"/>
+                            <constraint firstItem="a5O-W4-YUz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oxD-Ad-WdM"/>
+                            <constraint firstItem="cAi-ih-EGX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="paC-cj-JVN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="cityTextField" destination="bOA-FF-QNq" id="Dti-z6-7fI"/>
+                        <outlet property="resultLabel" destination="a5O-W4-YUz" id="6lF-cC-un3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-76" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="eberhard-grossgasteiger-330357.jpg" width="1000" height="683"/>
+    </resources>
 </document>
